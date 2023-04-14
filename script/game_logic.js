@@ -223,3 +223,5 @@ function getImageTextArray() {
     ];
     return imageTexts;
 }
+
+//testar github-kontot
