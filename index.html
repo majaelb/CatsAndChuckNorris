@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cats and Chuck Norris</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container" id="container">
+        <h1 id="gameName"></h1>
+        <h2 id="playertext"></h2>
+        <h2 id="joke"></h2>
+        <h2 id="points"></h2>
+        <button id="restartBtn">Restart</button>
+        <div id="gameboard">
+        </div>
+        <p id="imageText"></p>
+        <div class="button-container">
+            <button id="upBtn" class="up" onclick="move(0, -1)">Up</button>
+            <button id="downBtn" class="down" onclick="move(0, 1)">Down</button>
+            <button id="leftBtn" class="left" onclick="move(-1, 0)">Left</button>
+            <button id="rightBtn" class="right" onclick="move(1, 0)">Right</button>
+        </div>
+    </div>
+
+    <script src="script/game_logic.js"></script>
+</body>
+
+</html>

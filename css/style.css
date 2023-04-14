@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange: #F2c14e;
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
+
+body {
+    color: var(--orange);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    font-size: 54px;
+    text-transform: uppercase;
+    margin-top: 1vh;
+}
+
+h2{
+  font-size: 25px;
+  margin: 15px;
+}
+
+p {
+    font-size: 30px;
+    width: 750px;
+    padding: 10px;
+    margin: 20px;
+}
+
+#imageText {
+    height: 7vh;
+}
+
+#joke {
+  width: 750px;
+}
+
+.container {
+    /* padding: 40px; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #37505c;
+}
+
+
+#gameboard {
+    display: grid;
+    margin: 0;
+    padding: 0;
+
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 750px 750px;
+
+}
+
+.box {
+    text-align: center;
+    height: 150px;
+    width: 150px;
+    align-items: center;
+    color: var(--orange);
+    font-size: 50px;
+    font-weight: 600;
+}
+
+#restartBtn{
+  margin: 15px;
+}
+
+button {
+    margin: 2px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--orange);
+    color: #37505c;
+    border-color: var(--orange);
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: .7;
+}
+
+.button-container {
+    margin: 5px;
+    display: grid;
+    grid-template-areas:
+        'up up'
+        'left right'
+        'down down';
+    grid-gap: 5px;
+}
+
+.up {
+    grid-area: up;
+}
+
+.down {
+    grid-area: down;
+}
+
+.left {
+    grid-area: left;
+}
+
+.right {
+    grid-area: right;
+}
