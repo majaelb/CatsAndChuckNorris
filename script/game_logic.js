@@ -147,7 +147,7 @@ function getJoke() {
 
 function win() {
     playerText.innerHTML = "You won!"
-    document.getElementById("playertext").style.fontSize = "54px";
+    document.getElementById("playertext").style.fontSize = "45px";
     points += 50;
     pointsText.innerHTML = points + " points";
     resetHtml(player);
@@ -157,7 +157,7 @@ function win() {
 function loose() {
     getJoke();
     playerText.innerHTML = "You lost!";
-    document.getElementById("playertext").style.fontSize = "54px";
+    document.getElementById("playertext").style.fontSize = "45px";
     points -= 20;
     pointsText.innerHTML = points + " points";
     resetHtml(player);
@@ -223,5 +223,3 @@ function getImageTextArray() {
     ];
     return imageTexts;
 }
-
-//testar github-kontot

@@ -16,19 +16,18 @@ body {
 }
 
 h1 {
-    font-size: 54px;
+    font-size: 48px;
     text-transform: uppercase;
-    margin-top: 1vh;
 }
 
 h2{
-  font-size: 25px;
-  margin: 15px;
+  font-size: 20px;
+  margin: 6px;
 }
 
 p {
-    font-size: 30px;
-    width: 750px;
+    font-size: 20px;
+    width: 500px;
     padding: 10px;
     margin: 20px;
 }
@@ -38,14 +37,14 @@ p {
 }
 
 #joke {
-  width: 750px;
+  width: 500px;
 }
 
 .container {
-    /* padding: 40px; */
-    height: 100vh;
+    
+    height: 105vh;
     display: flex;
-    justify-content: center;
+    justify-content:baseline;
     align-items: center;
     flex-direction: column;
     background-color: #37505c;
@@ -67,11 +66,11 @@ p {
 
 .box {
     text-align: center;
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     align-items: center;
     color: var(--orange);
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 600;
 }
 
@@ -86,7 +85,7 @@ button {
     background-color: var(--orange);
     color: #37505c;
     border-color: var(--orange);
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 600;
 }
